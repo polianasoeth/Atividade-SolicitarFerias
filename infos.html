@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codes Book</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    
+   
+    <form class="Carta Férias">
+        
+        <h1><strong>Solicitação de Férias</strong></h1>
+
+        <div class="input-area">
+            <label for="Nome Colaborador"><strong>Nome do colaborador</strong></label><input id="campo-nome-colaborador" type="text" placeholder="Nome Completo" />
+            <span id="error-nome" class="texto-erro" hidden >Nome é obrigatório</span>
+        </div>
+
+        <div class="input-data">
+        <label for="Data Inicio"><strong>Data de início</strong></label><input id="campo-data-inicio" type="date" placeholder="dd-mm-aaaa" />
+        <span id="error-data-inicio" class="data-erro" hidden >Data de inicio é obrigatória!</span>
+        </div>
+
+        <div class="input-data">
+            <label for="Data Termino"><strong>Data de término</strong></label><input id="campo-data-termino" type="date" placeholder="dd-mm-aaaa" />
+            <span id="error-data-termino" class="data-erro" hidden >Data do término é obrigatória!</span>
+            </div>
+
+        <button type="button" onclick="solicitarFerias()">Solicitar Férias</button>
+
+        <!-- <a href="">Esqueceu a senha?</a> -->
+    </form>
+
+    <script src="infos.js"></script>
+
+</body>
+
+</html>
